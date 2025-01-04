@@ -1,0 +1,65 @@
+
+body {
+  background-color: #eee2b4;
+  justify-content: center;
+  width: 95%;
+}
+
+.botao{
+text-align: center;
+
+}
+
+#resetar{
+  width: 10em;
+  background-color: #ffffff;
+  margin: 30px;
+  border-radius: 20px;
+  border-color: #ffffff;
+  height: 60px;
+  width: 30%;
+}
+
+.jogo {
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 85%;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+.memory-card {
+  width: 15%;
+  height: 150px;
+  margin: 10px;
+  position: relative;
+  
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+
+}
+
+.front-face, .back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  backface-visibility: hidden;
+
+}
+
+.memory-card:active {
+  transform: scale(1.30); 
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
